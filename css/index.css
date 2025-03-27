@@ -1,0 +1,116 @@
+/* General Styles */
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: darkgoldenrod;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Background Image Holder */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Fade Effect for Text and Button */
+.hero-section h1,
+.hero-section p,
+.hero-section a {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Apply DarkGoldenRod Color to Headings */
+.hero-section h1 {
+    color: darkgoldenrod; /* Heading color */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Properties */
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
