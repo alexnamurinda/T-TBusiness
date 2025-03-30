@@ -13,24 +13,39 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">T&T Business Solutions</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- <img src="images/logo3.png" alt="Logo" class="logo d-none d-lg-block me-2"> -->
+                <img src="images/logo3.png" alt="Logo" class="logo me-2">
+            </a>
+
+            <!-- Toggle Button for Small Screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Listings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Why Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">free site visit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+
+            <!-- Sidebar Offcanvas Menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Listings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Why Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Free Site Visit</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <header class="hero-section text-white text-center">

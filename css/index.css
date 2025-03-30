@@ -1,6 +1,5 @@
 /* General Styles */
 @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,14 +15,27 @@ body {
 }
 
 /* Navbar */
+/* .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+} */
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
-
 .nav-link:hover{
     color: darkgoldenrod;
     font-weight: bold;
+}
+/* Show Logo on Large Screens */
+.logo {
+    height: 80px;
+}
+
+/* Offcanvas Customization */
+.offcanvas {
+    width: 100px;
 }
 
 /* Hero Section */
@@ -116,12 +127,19 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    /* Responsive Styles */
+     /* Show Logo on Small Screens */
+     .navbar-brand .logo{
+        display: block;
+        margin: 0 auto;
+        height: 60px; 
+    }
     .hero-section h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .hero-section p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .card img {

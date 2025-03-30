@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         titleElement.style.opacity = "0";
         textElement.style.opacity = "0";
         btnElement.style.opacity = "0";
-        heroSection.style.opacity = "0.5";
+        heroSection.style.opacity = "0.1";
 
         setTimeout(() => {
             // Change content
