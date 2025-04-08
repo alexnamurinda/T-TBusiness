@@ -1,0 +1,212 @@
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .navbar-nav .nav-link {
+        margin: 0 0.3rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .service-features {
+        min-height: 120px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar {
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+    
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        padding: 10rem 0 5rem;
+    }
+    
+    .about-img {
+        margin-bottom: 3rem;
+    }
+    
+    .about-content {
+        padding-left: 0;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 2rem;
+    }
+    
+    .service-features {
+        min-height: auto;
+    }
+    
+    .cta-section .text-lg-end {
+        text-align: center !important;
+        margin-top: 2rem;
+    }
+    
+    .service-hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .footer-info, .footer-links, .footer-contact {
+        margin-bottom: 2rem;
+    }
+    
+    .team-member-img img {
+        height: 250px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    section {
+        padding: 4rem 0;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .service-card, .property-card, .testimonial-card, .review-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-stats .stat-item {
+        margin-bottom: 2rem;
+    }
+    
+    .service-hero {
+        height: 30vh;
+        min-height: 250px;
+    }
+    
+    .service-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .footer {
+        padding: 3rem 0 0;
+    }
+    
+    .footer-links-bottom a {
+        margin-left: 1rem;
+    }
+    
+    .copyright, .footer-links-bottom {
+        text-align: center !important;
+    }
+    
+    .footer-links-bottom {
+        margin-top: 1rem;
+    }
+    
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    
+    .error-content h1 {
+        font-size: 6rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .service-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .property-img img {
+        height: 200px;
+    }
+    
+    .property-price {
+        font-size: 1.3rem;
+    }
+    
+    .team-member-img img {
+        height: 220px;
+    }
+    
+    .error-content h1 {
+        font-size: 4rem;
+    }
+}

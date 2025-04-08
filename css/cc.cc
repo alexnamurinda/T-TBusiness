@@ -1,5 +1,6 @@
 /* General Styles */
 @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
 body {
     /* font-family: Arial, sans-serif; */
     margin: 0;
@@ -14,55 +16,89 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Navbar */
-.nav_container{
+/* Navbar Container */
+.nav_container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    padding: 0 15px;
     background-image: url('../images/nav_bg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 10px 30px 10px 20px;
+    display: flex;
+    justify-content: space-around;
     z-index: 1000;
 }
 
-.nav_container::before{
+/* White overlay on nav background */
+.nav_container::before {
     content: '';
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
-    z-index: -1;
+    z-index: -2;
 }
 
 /* Push nav content above overlay */
 .nav_container>* {
-    z-index: 1000;
+    position: relative;
+    z-index: 2;
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
+/* Nav links spacing */
+.navbar-nav .nav-item {
+    margin-top: 15px;
 }
+
+/* Brand styling */
 .navbar-brand {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
-.nav-link:hover{
+
+/* Hover effect */
+.nav-link:hover {
     color: darkgoldenrod;
     font-weight: bold;
 }
-/* Show Logo on Large Screens */
+
+/* Logo image */
 .logo {
-    height: 120px;
+    height: 130px;
+    border-radius: 8px;
+}
+
+/* Company name text (small screens) */
+.company-name {
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Toggler spacing */
+.navbar-toggler {
+    z-index: 2;
+    margin-left: auto;
+}
+
+
+.container {
+    background: transparent;
+    margin: auto;
+    padding: 0 15px;
 }
 
 /* Offcanvas Customization */
 .offcanvas {
     width: 100px;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px); */
 }
 
 /* Hero Section */
@@ -105,7 +141,8 @@ body {
 
 /* Apply DarkGoldenRod Color to Headings */
 .hero-section h1 {
-    color: darkgoldenrod; /* Heading color */
+    color: darkgoldenrod;
+    /* Heading color */
     font-size: 3rem;
     font-weight: bold;
 }
@@ -153,24 +190,21 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    /* Responsive Styles */
-     /* Show Logo on Small Screens */
-     .navbar-brand .logo{
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav_container {
+        padding: 10px 15px;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .company-name {
         display: block;
-        margin: 0 auto;
-        height: 40px; 
     }
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-
-    .hero-section p {
-        font-size: 1.2rem;
-    }
-
-    .card img {
-        height: 150px;
-    }
-    
 }
