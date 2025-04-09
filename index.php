@@ -63,7 +63,7 @@
     <header class="hero-section">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-6" data-aos="zoom-in">
+                <div class="col-md-6" data-aos="zoom-in" duration="1000">
                     <h1 class="hero-title">your trusted partner for Business Solutions</h1>
                     <p class="hero-text">Expert services in Real Estate, Air Ticket Booking, and Visa Consultation to help you reach your goals.</p>
                     <div class="hero-buttons">
@@ -348,12 +348,12 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8" data-aos="fade-right">
+            <div class="row align-items-center"  data-aos="zoom-in" duration="1000">
+                <div class="col-lg-8">
                     <h2>Ready to Get Started?</h2>
                     <p>Contact us today for a free consultation and let our experts help you achieve your goals.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <div class="col-lg-4 text-lg-end"">
                     <a href="tel:0744766410" class="btn btn-light btn-lg me-2" title="Call Us">
                         <i class="fas fa-phone-alt"></i> Call
                     </a>
