@@ -81,7 +81,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                    <img src="/api/placeholder/600/400" alt="Real Estate Services" class="img-fluid rounded">
+                    <img src="../images/property2.jpg" alt="Real Estate Services" class="img-fluid rounded">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2>Find Your Dream Property</h2>
@@ -260,7 +260,7 @@
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="property-card">
                         <div class="property-img">
-                            <img src="/api/placeholder/400/300" alt="Luxury Apartment" class="img-fluid">
+                            <img src="../images/property2.jpg" alt="Luxury Apartment" class="img-fluid">
                             <span class="property-status">For Sale</span>
                         </div>
                         <div class="property-info">
@@ -279,7 +279,7 @@
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="property-card">
                         <div class="property-img">
-                            <img src="/api/placeholder/400/300" alt="Commercial Office Space" class="img-fluid">
+                            <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
                             <span class="property-status">For Lease</span>
                         </div>
                         <div class="property-info">
@@ -298,7 +298,7 @@
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="property-card">
                         <div class="property-img">
-                            <img src="/api/placeholder/400/300" alt="Family Home" class="img-fluid">
+                            <img src="../images/property1.jpg" alt="Family Home" class="img-fluid">
                             <span class="property-status">For Sale</span>
                         </div>
                         <div class="property-info">

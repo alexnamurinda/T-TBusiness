@@ -63,7 +63,7 @@
     <header class="hero-section">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-6" data-aos="fade-right">
                     <h1 class="hero-title">your trusted partner for Business Solutions</h1>
                     <p class="hero-text">Expert services in Real Estate, Air Ticket Booking, and Visa Consultation to help you reach your goals.</p>
                     <div class="hero-buttons">
