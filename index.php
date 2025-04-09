@@ -226,12 +226,12 @@
     <section class="about-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <div class="about-img">
                         <img src="images/about.png" alt="logo" class="img-fluid rounded">
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="about-content">
                         <h2>About T&T Business Solutions</h2>
                         <p>Founded with a vision to provide comprehensive business solutions under one roof, T&T Business Solutions has grown to become a trusted name in the industry.</p>
