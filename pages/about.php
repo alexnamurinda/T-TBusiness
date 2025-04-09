@@ -89,7 +89,7 @@
                         <p>Our founders, Thomas & Teresa Wilson, saw the need for a reliable one-stop business solution provider that truly understood client needs and delivered exceptional results. This vision continues to guide every aspect of our operations today.</p>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="story-image">
                         <img src="../images/history.jpg" alt="Our History" class="img-fluid rounded">
                     </div>
@@ -347,11 +347,11 @@
     <section class="cta-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8" data-aos="fade-right">
+                <div class="col-lg-8" data-aos="zoom-in">
                     <h2>Ready to Work with Us?</h2>
                     <p>Contact our team today to discuss how we can help you achieve your goals.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <div class="col-lg-4 text-lg-end" data-aos="zoom-out">
                     <a href="contact.php" class="btn btn-light btn-lg">Get in Touch</a>
                 </div>
             </div>

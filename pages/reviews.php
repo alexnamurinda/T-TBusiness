@@ -140,7 +140,7 @@
     <section class="reviews-overview">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4" data-aos="fade-right">
+                <div class="col-lg-4" data-aos="zoom-in">
                     <div class="reviews-summary">
                         <div class="overall-rating">
                             <div class="rating-number">4.8</div>
@@ -192,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8" data-aos="fade-left">
+                <div class="col-lg-8">
                     <div class="service-ratings">
                         <h3>Service Ratings</h3>
                         <div class="row">

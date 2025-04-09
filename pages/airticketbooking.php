@@ -77,10 +77,10 @@
     <section class="service-detail py-5">
         <div class="container">
             <div class="row align-items-center mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <img src="/api/placeholder/600/400" alt="Air ticket booking service" class="img-fluid rounded shadow">
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                     <h2>Seamless Flight Booking Solutions</h2>
                     <p class="lead">Let us handle your travel arrangements with our expert air ticket booking services.</p>
                     <p>At T&T Business Solutions, we make flying easier by offering comprehensive flight booking services for both business and leisure travelers. Our dedicated team works with major airlines worldwide to ensure you get the best fares and optimal itineraries for your needs.</p>

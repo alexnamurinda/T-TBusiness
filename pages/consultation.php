@@ -55,12 +55,12 @@
     <header class="consultation-hero">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6">
                     <h1>Expert Visa Consultation Services</h1>
                     <p>Get personalized guidance for your visa application journey from our experienced consultants.</p>
                     <a href="#booking" class="btn btn-primary">Book a Consultation</a>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <img src="images/consultation-hero.jpg" alt="Consultation Services" class="img-fluid rounded shadow">
                 </div>
             </div>
@@ -171,7 +171,7 @@
             <h2 class="section-title text-center mb-5" data-aos="fade-up">Book a Consultation</h2>
             
             <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <div class="booking-info p-4 rounded shadow-sm">
                         <h3>How It Works</h3>
                         <ol class="booking-steps">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <form id="consultationForm" class="booking-form p-4 rounded shadow-sm">
                         <div class="mb-3">
                             <label for="serviceType" class="form-label">Service Type</label>

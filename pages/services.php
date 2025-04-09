@@ -80,10 +80,10 @@
     <section class="service-overview">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in">
                     <img src="../images/property2.jpg" alt="Real Estate Services" class="img-fluid rounded">
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6">
                     <h2>Find Your Dream Property</h2>
                     <p class="lead">At T&T Business Solutions, we understand that finding the perfect property is more than just a transaction—it's about finding a place you can call home or an investment that secures your future.</p>
                     <p>Our experienced real estate professionals are dedicated to helping you navigate the complex property market with confidence and ease. Whether you're looking to buy, sell, or invest, we offer personalized services tailored to your unique needs.</p>
@@ -324,12 +324,12 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8" data-aos="fade-right">
+            <div class="row align-items-center" data-aos="zoom-in">
+                <div class="col-lg-8">
                     <h2>Ready to Find Your Perfect Property?</h2>
                     <p>Contact our real estate experts today for a free consultation.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                <div class="col-lg-4 text-lg-end">
                     <a href="contact.html" class="btn btn-light btn-lg">Get Started Now</a>
                 </div>
             </div>
