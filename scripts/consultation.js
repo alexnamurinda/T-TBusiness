@@ -1,8 +1,3 @@
-/**
- * T&T Business Solutions - Consultation Page JavaScript
- * Custom functionality for the consultation booking process
- */
-
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS animation library
     AOS.init({
@@ -30,16 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            // Scroll to booking section after a delay
-            setTimeout(() => {
-                const bookingSection = document.getElementById('booking');
-                if (bookingSection) {
-                    window.scrollTo({
-                        top: bookingSection.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
-            }, 500);
+            // // Scroll to booking section after a delay
+            // setTimeout(() => {
+            //     const bookingSection = document.getElementById('booking');
+            //     if (bookingSection) {
+            //         window.scrollTo({
+            //             top: bookingSection.offsetTop - 100,
+            //             behavior: 'smooth'
+            //         });
+            //     }
+            // }, 500);
         });
     });
 

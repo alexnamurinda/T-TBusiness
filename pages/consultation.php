@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link href="../css/responsive.css" rel="stylesheet">
     <link href="../css/consultation.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -28,50 +30,55 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
+                        <a class="nav-link active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services <i class="fas fa-caret-down"></i>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item active" href="consultation.html">Visa Consultation</a></li>
-                            <li><a class="dropdown-item" href="documentation.html">Documentation</a></li>
-                            <li><a class="dropdown-item" href="application.html">Application Processing</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.php">Real Estate</a></li>
+                            <li><a class="dropdown-item" href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a class="dropdown-item active" href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.php">Reviews</a>
                     </li>
                 </ul>
+                <!-- <div class="ms-3 d-none d-lg-block">
+                    <a href="pages/contact.php" class="btn btn-primary">Get a Quote</a>
+                </div> -->
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="consultation-hero">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-up">
                     <h1>Expert Visa Consultation Services</h1>
-                    <p>Get personalized guidance for your visa application journey from our experienced consultants.</p>
-                    <a href="#booking" class="btn btn-primary">Book a Consultation</a>
-                </div>
-                <div class="col-lg-6" data-aos="zoom-in">
-                    <img src="images/consultation-hero.jpg" alt="Consultation Services" class="img-fluid rounded shadow">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="../index.php#services">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Visa Consultation Services</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Services Overview -->
     <section id="services-overview" class="py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5" data-aos="fade-up">Our Consultation Services</h2>
-            
             <div class="row service-tabs">
                 <div class="col-md-4" data-aos="fade-up">
                     <ul class="nav flex-column service-nav" id="serviceNav" role="tablist">
@@ -169,7 +176,7 @@
     <section id="booking" class="bg-light py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5" data-aos="fade-up">Book a Consultation</h2>
-            
+
             <div class="row">
                 <div class="col-lg-6" data-aos="zoom-in">
                     <div class="booking-info p-4 rounded shadow-sm">
@@ -181,7 +188,7 @@
                             <li>Receive confirmation and pre-consultation materials</li>
                             <li>Meet with your consultant (online or in-person)</li>
                         </ol>
-                        
+
                         <div class="consultation-options mt-4">
                             <h4>Consultation Options</h4>
                             <div class="option-item">
@@ -199,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <form id="consultationForm" class="booking-form p-4 rounded shadow-sm">
                         <div class="mb-3">
@@ -214,7 +221,7 @@
                                 <option value="comprehensive">Comprehensive Package</option>
                             </select>
                         </div>
-                        
+
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <label for="appointmentDate" class="form-label">Preferred Date</label>
@@ -234,7 +241,7 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label class="form-label d-block">Consultation Mode</label>
                             <div class="form-check form-check-inline">
@@ -246,32 +253,32 @@
                                 <label class="form-check-label" for="modeInPerson">In-Person</label>
                             </div>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="fullName" required>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone</label>
                             <input type="tel" class="form-control" id="phone" required>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="destinationCountry" class="form-label">Destination Country</label>
                             <input type="text" class="form-control" id="destinationCountry" required>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="requirements" class="form-label">Specific Requirements</label>
                             <textarea class="form-control" id="requirements" rows="3"></textarea>
                         </div>
-                        
+
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
                         </div>
@@ -285,7 +292,7 @@
     <section id="faq" class="py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5" data-aos="fade-up">Frequently Asked Questions</h2>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="accordion faq-accordion" id="faqAccordion">
@@ -302,7 +309,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- FAQ Item 2 -->
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="accordion-header">
@@ -316,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- FAQ Item 3 -->
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                             <h3 class="accordion-header">
@@ -330,7 +337,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- FAQ Item 4 -->
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
                             <h3 class="accordion-header">
@@ -354,7 +361,7 @@
     <section id="testimonials" class="bg-light py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5" data-aos="fade-up">Client Testimonials</h2>
-            
+
             <div class="testimonial-slider" id="testimonialCarousel">
                 <div class="row">
                     <!-- Testimonial 1 -->
@@ -364,7 +371,7 @@
                                 <p>"The visa consultation service was incredibly helpful. My consultant identified potential issues in my application that I would have never noticed. Thanks to their guidance, my visa was approved without any delays."</p>
                             </div>
                             <div class="testimonial-author">
-                                <img src="images/testimonial-1.jpg" alt="John D." class="testimonial-img">
+                                <img src="../images/developer.jpg" alt="John D." class="testimonial-img">
                                 <div class="author-info">
                                     <h4>John D.</h4>
                                     <p>Student Visa Applicant</p>
@@ -372,7 +379,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Testimonial 2 -->
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="testimonial-card">
@@ -380,7 +387,7 @@
                                 <p>"After a previous visa rejection, I was worried about applying again. The interview preparation service boosted my confidence and equipped me with the right approach. My visa was approved on the second attempt!"</p>
                             </div>
                             <div class="testimonial-author">
-                                <img src="images/testimonial-2.jpg" alt="Sarah M." class="testimonial-img">
+                                <img src="../images/sara.jpg" alt="Sarah M." class="testimonial-img">
                                 <div class="author-info">
                                     <h4>Sarah M.</h4>
                                     <p>Business Visa Applicant</p>
@@ -388,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Testimonial 3 -->
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="testimonial-card">
@@ -396,7 +403,7 @@
                                 <p>"The documentation guidance was worth every penny. The consultant helped me organize my complex financial documents in a way that clearly demonstrated my eligibility. Highly recommended!"</p>
                             </div>
                             <div class="testimonial-author">
-                                <img src="images/testimonial-3.jpg" alt="Raj P." class="testimonial-img">
+                                <img src="../images/micheal.jpg" alt="Raj P." class="testimonial-img">
                                 <div class="author-info">
                                     <h4>Raj P.</h4>
                                     <p>Investor Visa Applicant</p>
@@ -409,72 +416,79 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section id="cta" class="py-5 cta-section">
-        <div class="container text-center">
-            <h2 data-aos="fade-up">Ready to Start Your Visa Journey?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Our expert consultants are ready to guide you through the process.</p>
-            <div data-aos="fade-up" data-aos-delay="200">
-                <a href="#booking" class="btn btn-primary btn-lg me-3">Book a Consultation</a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer py-5">
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-3 text-center">
                     <div class="footer-info">
-                        <h3>T&T Business Solutions</h3>
-                        <p>Your trusted partner for visa and immigration services with over 15 years of experience.</p>
-                        <div class="social-links mt-3">
+                        <img src="../images/logo.png" alt="Logo" class="footer-logo mb-3">
+                        <p>Your trusted partner for real estate, air ticket booking, visa consultation, and more.</p>
+                        <div class="social-links">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-2">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+
+                <div class="col-md-3 text-center">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="../index.php#services">Services</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
+                            <li><a href="reviews.php">Reviews</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col-lg-3">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="consultation.html">Visa Consultation</a></li>
-                        <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="application.html">Application Processing</a></li>
-                        <li><a href="appeal.html">Appeals & Refusals</a></li>
-                    </ul>
+                <div class="col-md-3 text-center">
+                    <div class="footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
+                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col-lg-3">
-                    <h4>Contact Us</h4>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 400<br>
-                        New York, NY 10001<br>
-                        <i class="fas fa-phone"></i> +1 (555) 123-4567<br>
-                        <i class="fas fa-envelope"></i> info@ttbusiness.com
-                    </p>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <p class="copyright">© 2023 T&T Business Solutions. All rights reserved.</p>
+                <div class="col-md-3 text-center">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> 123 Nabisunsa, Jinja Road<br>
+                            Kampala, Uganda<br>
+                            <i class="fas fa-phone"></i>+256 744 - 766 - 410<br>
+                            <i class="fas fa-envelope"></i> info@ttbusinesssolution.com
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 text-md-start text-center">
+                        <p class="copyright">© 2025 T&T Business Solution. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-3 text-md-center text-center">
+                        <p class="copyright">
+                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-md-end text-center">
+                        <div class="footer-links-bottom">
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <!-- Bootstrap and jQuery Scripts -->
@@ -486,4 +500,5 @@
     <script src="../scripts/main.js"></script>
     <script src="../scripts/consultation.js"></script>
 </body>
+
 </html>

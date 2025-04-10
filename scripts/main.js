@@ -250,3 +250,13 @@ if (myCarousel) {
         ride: 'carousel'
     });
 }
+
+document.querySelectorAll('.nav-collapse').forEach(item => {
+    item.addEventListener('click', function () {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+            bsCollapse.hide();
+        }
+    });
+});

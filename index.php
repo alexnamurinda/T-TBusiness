@@ -19,45 +19,42 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <span class="logo-text">T&T</span> Business Solutions
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services <i class="fas fa-caret-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="pages/services.php">Real Estate</a></li>
-                            <li><a class="dropdown-item" href="pages/airticketbooking.php">Air Ticket Booking</a></li>
-                            <li><a class="dropdown-item" href="pages/consultation.php">Visa Consultation</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/about.php">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/reviews.php">Reviews</a>
-                    </li>
-                </ul>
-                <!-- <div class="ms-3 d-none d-lg-block">
-                    <a href="pages/contact.php" class="btn btn-primary1">Call Us</a>
-                </div> -->
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container justify-content-center">
+        <a class="navbar-brand" href="index.php">
+            <span class="logo-text">T&T</span> Business Solutions
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                        Services <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-collapse" href="pages/services.php">Real Estate</a></li>
+                        <li><a class="dropdown-item nav-collapse" href="pages/airticketbooking.php">Air Ticket Booking</a></li>
+                        <li><a class="dropdown-item nav-collapse" href="pages/consultation.php">Visa Consultation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-collapse" href="pages/about.php">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-collapse" href="pages/contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-collapse" href="pages/reviews.php">Reviews</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <header class="hero-section">
