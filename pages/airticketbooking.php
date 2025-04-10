@@ -382,9 +382,9 @@
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                            <li><a href="services.php">Real Estate</a></li>
+                            <li><a href="#">Air Ticket Booking</a></li>
+                            <li><a href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -409,7 +409,7 @@
                     </div>
                     <div class="col-md-3 text-md-center text-center">
                         <p class="copyright">
-                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                            Developed by <a href="https://namurindaalex.github.io/portfolio/" target="_blank" class="developer-link">namtechnologies.com</a>
                         </p>
                     </div>
                     <div class="col-md-3 text-md-end text-center">

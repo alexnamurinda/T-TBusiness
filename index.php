@@ -52,9 +52,6 @@
                         <a class="nav-link" href="pages/reviews.php">Reviews</a>
                     </li>
                 </ul>
-                <!-- <div class="ms-3 d-none d-lg-block">
-                    <a href="pages/contact.php" class="btn btn-primary1">Call Us</a>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -68,11 +65,8 @@
                     <p class="hero-text">Expert services in Real Estate, Air Ticket Booking, and Visa Consultation to help you reach your goals.</p>
                     <div class="hero-buttons">
                         <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
-                        <a href="tel:0744766410" class="btn btn-outline-light btn-lg ms-2">
-                            <i class="fas fa-phone-alt me-2" style="color: #3498db;"></i>Call Us
-                        </a>
+                        <a href="tel:0744766410" class="btn btn-primary btn-lg" style="background: transparent; border: 1px solid white;"><i class="fas fa-phone-alt me-2" style="color: #fff;"></i>Call Us</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -376,10 +370,10 @@
                         <img src="images/logo.png" alt="T&T Business Solutions Logo" class="footer-logo mb-3">
                         <p>Your trusted partner for real estate, air ticket booking, visa consultation, and more.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -390,8 +384,8 @@
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="pages/about.php">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
                             <li><a href="pages/contact.php">Contact Us</a></li>
+                            <li><a href="pages/reviews.php">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
@@ -399,9 +393,9 @@
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                            <li><a href="pages/services.php">Real Estate</a></li>
+                            <li><a href="pages/airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a href="pages/consultation.php">Visa Consultation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -426,7 +420,7 @@
                     </div>
                     <div class="col-md-3 text-md-center text-center">
                         <p class="copyright">
-                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                            Developed by <a href="https://namurindaalex.github.io/portfolio/" target="_blank" class="developer-link">namtechnologies.com</a>
                         </p>
                     </div>
                     <div class="col-md-3 text-md-end text-center">

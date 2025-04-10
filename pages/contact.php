@@ -122,7 +122,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form-wrapper p-4 rounded shadow-sm">
-                        <h2 class="mb-4" style="text-align: center;">Send Us a Message</h2>
+                        <h3 class="mb-4" style="text-align: center;">Send Us a Message</h3>
                         <form id="contactForm" class="needs-validation" novalidate>
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -190,7 +190,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7473709418027!2d32.631307072863564!3d0.34169299965496724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db9001473c987%3A0x6f3e93f5084de1b0!2sBanda%20Nabisunsa!5e0!3m2!1sen!2sug!4v1744117366299!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="business-hours mt-4 p-3 rounded shadow-sm">
-                            <h3><i class="far fa-clock me-2"></i>Business Hours</h3>
+                            <h4><i class="far fa-clock me-2"></i>Business Hours</h4>
                             <ul class="list-unstyled mt-3">
                                 <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
                                 <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM</li>
@@ -264,26 +264,6 @@
         </div>
     </section>
 
-    <!-- CTA Section
-    <section class="contact-cta py-5 text-white text-center">
-        <div class="container">
-            <h2 class="display-5">Ready to get started?</h2>
-            <p class="lead mb-4">Let us help you achieve your business and travel goals today.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="cta-buttons">
-                        <a href="tel:+15551234567" class="btn btn-light btn-lg me-2 mb-2">
-                            <i class="fas fa-phone me-2"></i>Call Now
-                        </a>
-                        <a href="#contactForm" class="btn btn-outline-light btn-lg mb-2">
-                            <i class="fas fa-envelope me-2"></i>Email Us
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -317,9 +297,9 @@
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                            <li><a href="services.php">Real Estate</a></li>
+                            <li><a href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -343,7 +323,7 @@
                     </div>
                     <div class="col-md-3 text-md-center text-center">
                         <p class="copyright">
-                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                            Developed by <a href="https://namurindaalex.github.io/portfolio/" target="_blank" class="developer-link">namtechnologies.com</a>
                         </p>
                     </div>
                     <div class="col-md-3 text-md-end text-center">

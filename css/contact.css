@@ -87,6 +87,8 @@
 .business-hours {
     background-color: #fff;
     border-radius: 8px;
+    width: 60%;
+    margin-left: 20%;
 }
 
 /* CTA section

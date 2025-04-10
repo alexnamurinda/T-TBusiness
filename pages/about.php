@@ -37,9 +37,9 @@
                             Services <i class="fas fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="pages/services.php">Real Estate</a></li>
-                            <li><a class="dropdown-item" href="pages/airticketbooking.php">Air Ticket Booking</a></li>
-                            <li><a class="dropdown-item" href="pages/consultation.php">Visa Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.php">Real Estate</a></li>
+                            <li><a class="dropdown-item" href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a class="dropdown-item" href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -52,9 +52,6 @@
                         <a class="nav-link" href="reviews.php">Reviews</a>
                     </li>
                 </ul>
-                <!-- <div class="ms-3 d-none d-lg-block">
-                    <a href="pages/contact.php" class="btn btn-primary">Get a Quote</a>
-                </div> -->
             </div>
         </div>
     </nav>
@@ -82,7 +79,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="story-content">
-                        <h2>Our Story</h2>
+                        <h3>Our Story</h3>
                         <p class="lead">From humble beginnings to an industry leader</p>
                         <p>Founded in 2015, T&T Business Solutions was established with a simple mission: to provide comprehensive business solutions under one roof with uncompromising quality and personalized service.</p>
                         <p>What began as a small operation with just 3 team members has grown into a trusted industry name with over 30 professionals dedicated to helping clients achieve their goals.</p>
@@ -141,7 +138,7 @@
                 <!-- <p>The principles that guide everything we do</p> -->
             </div>
             <div class="row">
-                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-4 text-center">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-handshake"></i>
@@ -150,7 +147,7 @@
                         <p>We conduct business with unwavering honesty, transparency, and ethical standards, earning the trust of our clients in every interaction.</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4 text-center">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-star"></i>
@@ -159,7 +156,7 @@
                         <p>We strive for excellence in everything we do, constantly improving our services and exceeding client expectations.</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-4 text-center">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-users"></i>
@@ -170,7 +167,7 @@
                 </div>
 
                 <!-- second values row -->
-                <div class="col-md-4 text-center mt-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-4 text-center mt-md-4">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-lightbulb"></i>
@@ -179,7 +176,7 @@
                         <p>We embrace new ideas, technologies, and approaches to continuously improve our services and provide cutting-edge solutions.</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center mt-md-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-4 text-center mt-md-4">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-hands-helping"></i>
@@ -188,7 +185,7 @@
                         <p>We collaborate effectively within our team and with our clients, leveraging diverse expertise to achieve shared goals.</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center mt-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-md-4 text-center mt-md-4">
                     <div class="value-card">
                         <div class="value-icon">
                             <i class="fas fa-globe"></i>
@@ -268,38 +265,38 @@
                 <h2>Our Journey</h2>
                 <p>Key milestones in our company's history</p>
             </div>
-            <div class="timeline" data-aos="fade-up">
-                <div class="timeline-item left">
+            <div class="timeline">
+                <div class="timeline-item left" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2015</h3>
                         <p>T&T Business Solutions founded by Thomas & Teresa Wilson in New York</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item right" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2017</h3>
                         <p>Expanded services to include Air Ticket Booking and Visa Consultation</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
+                <div class="timeline-item left" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2019</h3>
                         <p>Reached milestone of 200+ satisfied clients and moved to larger office space</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item right" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2021</h3>
                         <p>Awarded "Business Excellence Award" for outstanding customer service</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
+                <div class="timeline-item left" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2023</h3>
                         <p>Expanded team to 30+ professionals and established partnerships with leading industry providers</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item right" data-aos="zoom-in">
                     <div class="timeline-content">
                         <h3>2025</h3>
                         <p>Celebrating 10 years of excellence with over 500 happy clients worldwide</p>
@@ -352,7 +349,7 @@
                     <p>Contact our team today to discuss how we can help you achieve your goals.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end" data-aos="zoom-out">
-                    <a href="contact.php" class="btn btn-light btn-lg">Get in Touch</a>
+                    <a href="contact.php#inquiryForm" class="btn btn-light btn-lg">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -391,9 +388,9 @@
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                            <li><a href="services.php">Real Estate</a></li>
+                            <li><a href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -418,7 +415,7 @@
                     </div>
                     <div class="col-md-3 text-md-center text-center">
                         <p class="copyright">
-                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                            Developed by <a href="https://namurindaalex.github.io/portfolio/" target="_blank" class="developer-link">namtechnologies.com</a>
                         </p>
                     </div>
                     <div class="col-md-3 text-md-end text-center">

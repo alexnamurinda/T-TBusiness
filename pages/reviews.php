@@ -597,7 +597,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="write-review-content">
-                            <h2>Share Your Experience</h2>
+                            <h2 style="color: #3498db;">Share Your Experience</h2>
                             <p>We value your feedback and would love to hear about your experience with T&T Business Solutions. Your review helps us improve our services and assists other clients in making informed decisions.</p>
                             <ul class="review-benefits">
                                 <li><i class="fas fa-check-circle"></i> Help others make informed decisions</li>
@@ -754,9 +754,9 @@
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="real-estate.html">Real Estate</a></li>
-                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                            <li><a href="services.php">Real Estate</a></li>
+                            <li><a href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -781,7 +781,7 @@
                     </div>
                     <div class="col-md-3 text-md-center text-center">
                         <p class="copyright">
-                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                            Developed by <a href="https://namurindaalex.github.io/portfolio/" target="_blank" class="developer-link">namtechnologies.com</a>
                         </p>
                     </div>
                     <div class="col-md-3 text-md-end text-center">
