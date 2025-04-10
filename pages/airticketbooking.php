@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
     <!-- AOS (Animate On Scroll) Library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/mainstyles.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="../css/mainstyles.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href="../css/airticketbooking.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -27,77 +30,77 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
+                        <a class="nav-link active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services <i class="fas fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="real-estate.html">Real Estate</a></li>
-                            <li><a class="dropdown-item active" href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a class="dropdown-item" href="visa-services.html">Visa Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.php">Real Estate</a></li>
+                            <li><a class="dropdown-item active" href="#">Air Ticket Booking</a></li>
+                            <li><a class="dropdown-item" href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.php">Reviews</a>
                     </li>
                 </ul>
-                <div class="ms-3 d-none d-lg-block">
-                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-                </div>
+                <!-- <div class="ms-3 d-none d-lg-block">
+                    <a href="pages/contact.php" class="btn btn-primary">Get a Quote</a>
+                </div> -->
             </div>
         </div>
     </nav>
+
     <!-- Page Header -->
-    <header class="page-header">
+    <section class="page-header">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1>Air Ticket Booking</h1>
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1>Air ticket Booking services</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Services</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Air Ticket Booking</li>
+                            <li class="breadcrumb-item"><a href="../index.php#services">Services</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">air tickets</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Main Content -->
     <section class="service-detail py-5">
         <div class="container">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6" data-aos="zoom-in">
-                    <img src="/api/placeholder/600/400" alt="Air ticket booking service" class="img-fluid rounded shadow">
+                    <img src="../images/flightservice.jpg" alt="booking service" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                     <h2>Seamless Flight Booking Solutions</h2>
                     <p class="lead">Let us handle your travel arrangements with our expert air ticket booking services.</p>
                     <p>At T&T Business Solutions, we make flying easier by offering comprehensive flight booking services for both business and leisure travelers. Our dedicated team works with major airlines worldwide to ensure you get the best fares and optimal itineraries for your needs.</p>
                     <div class="mt-4">
-                        <a href="contact.html" class="btn btn-primary me-2">Book Now</a>
+                        <a href="contact.php#inquiryForm" class="btn btn-primary me-2">Book Now</a>
                         <a href="#flight-options" class="btn btn-outline-primary">Explore Options</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Flight Booking Features -->
             <div class="row my-5" id="flight-options">
                 <div class="col-12 text-center mb-4">
                     <h2 class="section-title">Our Booking Services</h2>
                     <p class="section-description">Comprehensive solutions for all your travel needs</p>
                 </div>
-                
+
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="card h-100 service-card">
                         <div class="card-body text-center">
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 service-card">
                         <div class="card-body text-center">
@@ -121,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 service-card">
                         <div class="card-body text-center">
@@ -134,13 +137,13 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Why Choose Us Section -->
             <div class="row my-5 py-4 bg-light rounded">
                 <div class="col-12 text-center mb-4">
-                    <h2 class="section-title">Why Choose Our Booking Service</h2>
+                    <h2 class="section-title" style="color: #3498db;">Why Choose Our Booking Service</h2>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in">
                     <div class="text-center feature-box">
                         <div class="icon-circle mb-3">
@@ -150,7 +153,7 @@
                         <p>We offer competitive rates and price matching on all bookings.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="text-center feature-box">
                         <div class="icon-circle mb-3">
@@ -160,7 +163,7 @@
                         <p>Our team is available round the clock for any travel emergencies.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="text-center feature-box">
                         <div class="icon-circle mb-3">
@@ -170,7 +173,7 @@
                         <p>Change or cancel your bookings with minimal hassle and fees.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="text-center feature-box">
                         <div class="icon-circle mb-3">
@@ -181,107 +184,112 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Airlines Partners -->
             <div class="row my-5">
                 <div class="col-12 text-center mb-4">
                     <h2 class="section-title">Our Airline Partners</h2>
                     <p class="section-description">We work with major airlines globally to provide you the best service</p>
                 </div>
-                
+
                 <div class="col-12">
                     <div class="partners-carousel text-center py-4">
                         <div class="row">
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 1" class="img-fluid">
+                                    <img src="../images/partner2.avif" alt="Airline 1" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 2" class="img-fluid">
+                                    <img src="../images/partner3.jpg" alt="Airline 2" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 3" class="img-fluid">
+                                    <img src="../images/partner5.png" alt="Airline 3" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 4" class="img-fluid">
+                                    <img src="../images/partner6.jpeg" alt="Airline 4" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 5" class="img-fluid">
+                                    <img src="../images/partner7.jpeg" alt="Airline 5" class="img-fluid">
                                 </div>
                             </div>
                             <div class="col-4 col-md-2 mb-4">
                                 <div class="partner-logo">
-                                    <img src="/api/placeholder/120/60" alt="Airline 6" class="img-fluid">
+                                    <img src="../images/partner8.avif" alt="Airline 6" class="img-fluid">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Booking Process -->
-            <div class="row my-5">
-                <div class="col-12 text-center mb-4">
-                    <h2 class="section-title">Simple Booking Process</h2>
-                    <p class="section-description">Book your flights in just three easy steps</p>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <div class="process-step text-center">
-                        <div class="process-icon mb-3">
-                            <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center">1</span>
+
+            <!-- book Process Section -->
+            <section class="process-section" style="text-align: center;">
+                <div class="container">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h3>Simple Booking Process</h3>
+                        <p>Book your flights in just easy steps</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <div class="process-card">
+                                <div class="process-icon">
+                                    <i class="fas fa-comments"></i>
+                                    <span class="process-number">1</span>
+                                </div>
+                                <h3>Contact Us</h3>
+                                <p>Reach out with your travel requirements through our contact form or phone.</p>
+                            </div>
                         </div>
-                        <h4>Contact Us</h4>
-                        <p>Reach out with your travel requirements through our contact form or phone.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="process-step text-center">
-                        <div class="process-icon mb-3">
-                            <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center">2</span>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                            <div class="process-card">
+                                <div class="process-icon">
+                                    <i class="fas fa-search"></i>
+                                    <span class="process-number">2</span>
+                                </div>
+                                <h3>Get Quotations</h3>
+                                <p>We'll provide you with multiple options based on your preferences and budget.</p>
+                            </div>
                         </div>
-                        <h4>Get Quotations</h4>
-                        <p>We'll provide you with multiple options based on your preferences and budget.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="process-step text-center">
-                        <div class="process-icon mb-3">
-                            <span class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center">3</span>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                            <div class="process-card">
+                                <div class="process-icon">
+                                    <i class="fas fa-eye"></i>
+                                    <span class="process-number">3</span>
+                                </div>
+                                <h3>Confirm & Fly</h3>
+                                <p>Choose your preferred option, make the payment, and receive your e-tickets.</p>
+
+                            </div>
                         </div>
-                        <h4>Confirm & Fly</h4>
-                        <p>Choose your preferred option, make the payment, and receive your e-tickets.</p>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="400">
+                            <div class="process-card">
+                                <div class="process-icon">
+                                    <i class="fas fa-eye"></i>
+                                    <span class="process-number">4</span>
+                                </div>
+                                <h3>Confirm & Fly</h3>
+                                <p>Choose your preferred option, make the payment, and receive your e-tickets.</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Call to Action -->
-            <div class="row my-5">
-                <div class="col-12">
-                    <div class="cta-box text-center p-5 bg-primary text-white rounded" data-aos="zoom-in">
-                        <h2>Ready to Book Your Next Flight?</h2>
-                        <p class="lead mb-4">Contact our travel experts today for the best deals and personalized service.</p>
-                        <a href="contact.html" class="btn btn-light btn-lg">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            
+            </section>
+
             <!-- FAQ Section -->
             <div class="row my-5">
                 <div class="col-12 text-center mb-4">
                     <h2 class="section-title">Frequently Asked Questions</h2>
                 </div>
-                
+
                 <div class="col-12">
                     <div class="accordion" id="flightFAQ">
                         <div class="accordion-item">
@@ -296,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -309,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -322,7 +330,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -340,159 +348,82 @@
             </div>
         </div>
     </section>
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials-section py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-4">
-                    <h2 class="section-title">What Our Clients Say</h2>
-                    <p class="section-description">Hear from travelers who booked through our service</p>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <div class="testimonial-rating text-warning mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">"Their service saved me hours of searching online. They found me a business class deal that was cheaper than what I found on my own. Highly recommend!"</p>
-                        <div class="testimonial-author d-flex align-items-center mt-3">
-                            <div class="author-avatar me-3">
-                                <img src="/api/placeholder/50/50" alt="Client" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">Sarah Johnson</h5>
-                                <small class="text-muted">Business Traveler</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <div class="testimonial-rating text-warning mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">"We needed to book flights for our family of 6, and T&T made it so easy. They found connecting flights that actually worked for us, and their customer service was outstanding."</p>
-                        <div class="testimonial-author d-flex align-items-center mt-3">
-                            <div class="author-avatar me-3">
-                                <img src="/api/placeholder/50/50" alt="Client" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">Michael Rodriguez</h5>
-                                <small class="text-muted">Family Traveler</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <div class="testimonial-rating text-warning mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="testimonial-text">"When my flight was canceled due to weather, T&T's team was on it immediately. They rebooked me on the next available flight and kept me updated throughout. That's the value of working with professionals!"</p>
-                        <div class="testimonial-author d-flex align-items-center mt-3">
-                            <div class="author-avatar me-3">
-                                <img src="/api/placeholder/50/50" alt="Client" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">Amanda Chen</h5>
-                                <small class="text-muted">Frequent Flyer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <a href="reviews.html" class="btn btn-outline-primary">View More Reviews</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
-    <footer class="footer py-5">
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-4">T&T Business Solutions</h5>
-                    <p class="text-white-50">We provide comprehensive business solutions including real estate services, air ticket booking, and visa consultation to help businesses and individuals navigate complex processes with ease.</p>
-                    <div class="social-links mt-4">
-                        <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white-50 me-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-white-50"><i class="fab fa-instagram"></i></a>
+                <div class="col-md-3 text-center">
+                    <div class="footer-info">
+                        <img src="../images/logo.png" alt="Logo" class="footer-logo mb-3">
+                        <p>Your trusted partner for real estate, air ticket booking, visa consultation, and more.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="index.html" class="text-white-50">Home</a></li>
-                        <li><a href="about.html" class="text-white-50">About Us</a></li>
-                        <li><a href="services.html" class="text-white-50">Services</a></li>
-                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
-                        <li><a href="reviews.html" class="text-white-50">Reviews</a></li>
-                    </ul>
+
+                <div class="col-md-3 text-center">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="../index.php#services">Services</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
+                            <li><a href="reviews.php">Reviews</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Services</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="real-estate.html" class="text-white-50">Real Estate</a></li>
-                        <li><a href="air-tickets.html" class="text-white-50">Air Tickets</a></li>
-                        <li><a href="visa-services.html" class="text-white-50">Visa Services</a></li>
-                    </ul>
+                <div class="col-md-3 text-center">
+                    <div class="footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="real-estate.html">Real Estate</a></li>
+                            <li><a href="air-tickets.html">Air Ticket Booking</a></li>
+                            <li><a href="visa-services.html">Visa Consultation</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-4">Contact Info</h5>
-                    <ul class="list-unstyled footer-contact">
-                        <li class="d-flex mb-3">
-                            <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
-                            <span class="text-white-50">123 Business Avenue, Suite 100, New York, NY 10001</span>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <i class="fas fa-phone-alt text-primary me-3 mt-1"></i>
-                            <span class="text-white-50">+1 (555) 123-4567</span>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <i class="fas fa-envelope text-primary me-3 mt-1"></i>
-                            <span class="text-white-50">info@tandtbusiness.com</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fas fa-clock text-primary me-3 mt-1"></i>
-                            <span class="text-white-50">Mon - Fri: 9:00 AM - 6:00 PM</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="mt-4 mb-3 border-light">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="text-white-50 mb-0">&copy; 2025 T&T Business Solutions. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="text-white-50 mb-0">
-                        <a href="#" class="text-white-50">Privacy Policy</a> |
-                        <a href="#" class="text-white-50">Terms of Service</a>
-                    </p>
+                <div class="col-md-3 text-center">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> 123 Nabisunsa, Jinja Road<br>
+                            Kampala, Uganda<br>
+                            <i class="fas fa-phone"></i>+256 744 - 766 - 410<br>
+                            <i class="fas fa-envelope"></i> info@ttbusinesssolution.com
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 text-md-start text-center">
+                        <p class="copyright">© 2025 T&T Business Solution. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-3 text-md-center text-center">
+                        <p class="copyright">
+                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-md-end text-center">
+                        <div class="footer-links-bottom">
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
+
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
@@ -514,4 +445,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -239,3 +239,65 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+let currentPage = 1;
+const reviewsPerPage = 3;
+const reviewsContainer = document.getElementById("reviewsContainer");
+const reviews = Array.from(reviewsContainer.getElementsByClassName("review-item"));
+const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+
+function showPage(page) {
+    const start = (page - 1) * reviewsPerPage;
+    const end = start + reviewsPerPage;
+    reviews.forEach((review, index) => {
+        if (index >= start && index < end) {
+            review.style.display = 'block';
+        } else {
+            review.style.display = 'none';
+        }
+    });
+    updatePagination();
+}
+
+function updatePagination() {
+    const paginationItems = document.querySelectorAll(".pagination .page-item");
+    paginationItems.forEach((item, index) => {
+        if (index === currentPage) {
+            item.classList.add("active");
+        } else {
+            item.classList.remove("active");
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showPage(currentPage);
+
+    // Handling pagination clicks
+    const prevButton = document.querySelector('.pagination .page-item:first-child');
+    const nextButton = document.querySelector('.pagination .page-item:last-child');
+    
+    prevButton.addEventListener('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+
+    nextButton.addEventListener('click', function() {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+
+    document.querySelectorAll('.pagination .page-item').forEach((button, index) => {
+        if (index > 0 && index < totalPages + 1) {
+            button.addEventListener('click', function() {
+                currentPage = index;
+                showPage(currentPage);
+            });
+        }
+    });
+});

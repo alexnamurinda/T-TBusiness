@@ -1,7 +1,7 @@
 /* General Review Section Styling */
 /* Page Header */
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../images/reviewbg.jpg') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('../images/reviewbg.jpg') no-repeat center;
     background-size: cover;
     background-position: center;
     padding: 150px 0 80px;
@@ -31,7 +31,7 @@
     color: #f8f9fa;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #fff;
 }
 
@@ -341,7 +341,7 @@
     background-color: #3498db;
 }
 
-.featured-review-card{
+.featured-review-card {
     background-color: #fff;
     border-radius: 12px;
     padding: 30px;
@@ -384,18 +384,19 @@
     color: #2c3e50;
     font-size: 18px;
 }
+
 .reviewer-info h4 span {
     font-size: 14px;
     color: #6c757d;
     font-weight: 500;
 }
 
-.reviewer-info img{
+.reviewer-info img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #e8f5f3;    
+    border: 3px solid #e8f5f3;
 }
 
 .service-badge {
@@ -492,7 +493,7 @@
 .review-item {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.613);
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -509,7 +510,6 @@
     flex-grow: 1;
 }
 
-/* Pagination Styling - Enhanced */
 .reviews-pagination {
     margin-top: 50px;
 }
@@ -551,12 +551,29 @@
     background-color: #fff;
 }
 
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.review-item {
+    display: none;
+    /* Initially hide all reviews */
+}
+
+.review-item.active {
+    display: block;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .filter-options {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .reviews-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -568,25 +585,25 @@
         align-items: flex-start;
         gap: 15px;
     }
-    
+
     .filter-options {
         grid-template-columns: 1fr;
     }
-    
+
     .reviews-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .review-header {
         flex-direction: column;
     }
-    
+
     .review-rating {
         margin-top: 15px;
         margin-left: 0;
         text-align: left;
     }
-    
+
     .service-rating-card {
         margin-bottom: 20px;
     }

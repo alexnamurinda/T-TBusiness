@@ -68,7 +68,7 @@
                     <h1>Contact Us</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                         </ol>
                     </nav>
@@ -117,7 +117,7 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section class="py-5">
+    <section class="py-5" id="inquiryForm">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">

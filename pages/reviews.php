@@ -67,7 +67,7 @@
                     <h1>Client Reviews</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Reviews</li>
                         </ol>
                     </nav>
@@ -512,11 +512,11 @@
                     <div class="review-content">
                         <p>"The flight options were good, but I experienced some communication issues. There was confusion about my luggage allowance that wasn't clarified until the last minute. The service was average overall, but they did resolve the issues eventually."</p>
                     </div>
-                    <div class="review-response">
+                    <!-- <div class="review-response">
                         <h5><i class="fas fa-reply"></i> Response from T&T Business Solutions</h5>
                         <p>Thank you for your feedback, Thomas. We apologize for the confusion regarding your luggage allowance. We're reviewing our communication protocols to ensure such misunderstandings don't happen again. We appreciate your patience and would love the opportunity to serve you better in the future.</p>
                         <div class="response-author">— Air Ticket Team, T&T Business Solutions</div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Review Item 8 -->
@@ -572,26 +572,21 @@
                 </div>
             </div>
 
+
             <!-- Pagination -->
             <div class="reviews-pagination" data-aos="fade-up">
                 <nav aria-label="Reviews pagination">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
+                            <a class="page-link" tabindex="-1" aria-disabled="true">1</a>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </li>
+                        <li class="page-item active"><a class="page-link">2</a></li>
+                        <li class="page-item"><a class="page-link">3</a></li>
+                        <li class="page-item"><a class="page-link">4</a></li>
                     </ul>
                 </nav>
             </div>
+
         </div>
     </section>
 
@@ -725,23 +720,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Call to Action Section
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-container" data-aos="fade-up">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h2>Ready to Experience Our Award-Winning Services?</h2>
-                        <p>Join thousands of satisfied clients who have transformed their business operations with T&T Business Solutions.</p>
-                    </div>
-                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-                        <a href="contact.html" class="btn btn-white">Contact Us Today</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer class="footer">

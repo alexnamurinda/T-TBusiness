@@ -1,6 +1,6 @@
 // Real Estate Services Page Specific JavaScript
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize AOS (Animate on Scroll)
     AOS.init({
         duration: 800,
@@ -8,51 +8,103 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
         mirror: false
     });
-    
+
     // Navbar color change on scroll
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('navbar-scrolled');
         } else {
             navbar.classList.remove('navbar-scrolled');
         }
     });
-    
+
     // Back to top button functionality
     const backToTopButton = document.querySelector('.back-to-top');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             backToTopButton.classList.add('active');
         } else {
             backToTopButton.classList.remove('active');
         }
     });
-    
-    backToTopButton.addEventListener('click', function(e) {
+
+    backToTopButton.addEventListener('click', function (e) {
         e.preventDefault();
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
-    
+
     // Property filter functionality (if needed)
     const viewAllPropertiesBtn = document.querySelector('.featured-properties .btn-primary');
     if (viewAllPropertiesBtn) {
-        viewAllPropertiesBtn.addEventListener('click', function(e) {
+        viewAllPropertiesBtn.addEventListener('click', function (e) {
             e.preventDefault();
             // Simulate loading more properties
             alert('This would navigate to a full property listing page in a real implementation');
         });
     }
-    
+
+    const rows = document.querySelectorAll('.property-row');
+    const pageButtons = document.querySelectorAll('.page-btn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+    let interval;
+
+    function showRow(index) {
+        rows.forEach((row, i) => {
+            row.classList.toggle('active', i === index);
+        });
+        pageButtons.forEach((btn, i) => {
+            btn.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+    }
+
+    function startAutoSlide() {
+        interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % rows.length;
+            showRow(currentIndex);
+        }, 3000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(interval);
+    }
+
+    // Event listeners
+    pageButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            stopAutoSlide();
+            showRow(parseInt(btn.dataset.page));
+        });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        currentIndex = (currentIndex - 1 + rows.length) % rows.length;
+        showRow(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        currentIndex = (currentIndex + 1) % rows.length;
+        showRow(currentIndex);
+    });
+
+    // Start
+    showRow(0);
+    startAutoSlide();
+
     // Property detail view functionality
     const propertyDetailBtns = document.querySelectorAll('.property-card .btn-outline-primary');
-    propertyDetailBtns.forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
+    propertyDetailBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
             e.preventDefault();
             // Get the property title from the card
             const propertyTitle = this.closest('.property-info').querySelector('h3').textContent;
@@ -60,34 +112,34 @@ document.addEventListener('DOMContentLoaded', function() {
             alert(`You clicked on property: ${propertyTitle}\nThis would open a detailed view in a real implementation.`);
         });
     });
-    
+
     // Form validation for CTA buttons that might lead to contact forms
     const ctaButtons = document.querySelectorAll('.btn-primary, .btn-light');
-    ctaButtons.forEach(function(btn) {
+    ctaButtons.forEach(function (btn) {
         if (btn.getAttribute('href') === 'contact.html') {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 // Add any pre-navigation logic here if needed
                 // For example, storing the service type in session storage
                 sessionStorage.setItem('inquiryType', 'Real Estate');
             });
         }
     });
-    
+
     // Initialize property image hover effect
     const propertyImages = document.querySelectorAll('.property-img img');
-    propertyImages.forEach(function(img) {
-        img.addEventListener('mouseover', function() {
+    propertyImages.forEach(function (img) {
+        img.addEventListener('mouseover', function () {
             this.style.transform = 'scale(1.1)';
         });
-        
-        img.addEventListener('mouseout', function() {
+
+        img.addEventListener('mouseout', function () {
             this.style.transform = 'scale(1)';
         });
     });
-    
+
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId !== '#' && document.querySelector(targetId)) {
                 e.preventDefault();
@@ -97,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Optional: Add testimonial carousel if you want to add one later
     // This would require adding HTML markup for testimonials
-    
+
     // Optional: Property search functionality
     // This could be expanded if you add a search form to the page
 });
@@ -133,7 +185,7 @@ function toggleFavorite(propertyId) {
 }
 
 // Window resize handler for responsive adjustments
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     // Add any specific resize logic here if needed
     // For example, adjusting property card layouts on very small screens
 });

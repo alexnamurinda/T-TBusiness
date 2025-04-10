@@ -30,70 +30,112 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
+                        <a class="nav-link active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services <i class="fas fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item active" href="real-estate.html">Real Estate</a></li>
-                            <li><a class="dropdown-item" href="air-tickets.html">Air Ticket Booking</a></li>
-                            <li><a class="dropdown-item" href="visa-services.html">Visa Consultation</a></li>
+                            <li><a class="dropdown-item active" href="#">Real Estate</a></li>
+                            <li><a class="dropdown-item" href="airticketbooking.php">Air Ticket Booking</a></li>
+                            <li><a class="dropdown-item" href="consultation.php">Visa Consultation</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.php">Reviews</a>
                     </li>
                 </ul>
-                <div class="ms-3 d-none d-lg-block">
-                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-                </div>
+                <!-- <div class="ms-3 d-none d-lg-block">
+                    <a href="pages/contact.php" class="btn btn-primary">Get a Quote</a>
+                </div> -->
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header">
+    <section class="page-header">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1>Real Estate Services</h1>
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1>Real Estate services</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../index.php#services">Services</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Real Estate</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Service Overview -->
     <section class="service-overview">
         <div class="container">
             <div class="row align-items-center">
+                <!-- Image Carousel -->
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in">
-                    <img src="../images/property2.jpg" alt="Real Estate Services" class="img-fluid rounded">
+                    <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+                        <!-- Carousel Items -->
+                        <div class="carousel-inner rounded overflow-hidden">
+                            <div class="carousel-item active">
+                                <div class="carousel-image-wrapper">
+                                    <img src="../images/property1.jpg" class="d-block w-100" alt="Property 1">
+                                    <div class="carousel-caption-custom">
+                                        <h5>Modern City Apartment</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrapper">
+                                    <img src="../images/property2.jpg" class="d-block w-100" alt="Property 2">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrapper">
+                                    <img src="../images/property3.avif" class="d-block w-100" alt="Property 3">
+                                    <div class="carousel-caption-custom">
+                                        <h5>Peaceful Country Retreat</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image-wrapper">
+                                    <img src="../images/property4.jpg" class="d-block w-100" alt="Property 4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Dots -->
+                        <div class="carousel-indicators custom-dots">
+                            <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Text Content -->
                 <div class="col-lg-6">
                     <h2>Find Your Dream Property</h2>
                     <p class="lead">At T&T Business Solutions, we understand that finding the perfect property is more than just a transaction—it's about finding a place you can call home or an investment that secures your future.</p>
                     <p>Our experienced real estate professionals are dedicated to helping you navigate the complex property market with confidence and ease. Whether you're looking to buy, sell, or invest, we offer personalized services tailored to your unique needs.</p>
                     <div class="mt-4">
-                        <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+                        <a href="contact.php#inquiryForm" class="btn btn-primary">Schedule a Consultation</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Service Features -->
     <section class="service-features bg-light">
@@ -254,72 +296,269 @@
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
                 <h2>Featured Properties</h2>
-                <p>Explore our selection of premium properties</p>
+                <!-- <p>Explore our selection of premium properties</p> -->
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="../images/property2.jpg" alt="Luxury Apartment" class="img-fluid">
-                            <span class="property-status">For Sale</span>
-                        </div>
-                        <div class="property-info">
-                            <h3>Luxury Apartment in Downtown</h3>
-                            <div class="property-price">$450,000</div>
-                            <div class="property-details">
-                                <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
-                                <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
-                                <span><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
+
+            <div class="carousel-rows">
+                <!-- Group 1 -->
+                <div class="property-row row active">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property2.jpg" alt="Luxury Apartment" class="img-fluid">
+                                <span class="property-status">For Sale</span>
                             </div>
-                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
-                            <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            <div class="property-info">
+                                <h3>Luxury Apartment</h3>
+                                <div class="property-price">$450</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property2.jpg" alt="Luxury Apartment" class="img-fluid">
+                                <span class="property-status">For Sale</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Luxury Apartment</h3>
+                                <div class="property-price">$450</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property2.jpg" alt="Luxury Apartment" class="img-fluid">
+                                <span class="property-status">For Sale</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Luxury Apartment</h3>
+                                <div class="property-price">$450</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 1,500 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
-                            <span class="property-status">For Lease</span>
-                        </div>
-                        <div class="property-info">
-                            <h3>Modern Office Space</h3>
-                            <div class="property-price">$3,500/month</div>
-                            <div class="property-details">
-                                <span><i class="fas fa-users"></i> Up to 20 staff</span>
-                                <span><i class="fas fa-door-open"></i> 5 Rooms</span>
-                                <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+
+                <!-- Group 2 -->
+                <div class="property-row row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
                             </div>
-                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
-                            <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="property-card">
-                        <div class="property-img">
-                            <img src="../images/property1.jpg" alt="Family Home" class="img-fluid">
-                            <span class="property-status">For Sale</span>
-                        </div>
-                        <div class="property-info">
-                            <h3>Spacious Family Home</h3>
-                            <div class="property-price">$750,000</div>
-                            <div class="property-details">
-                                <span><i class="fas fa-bed"></i> 5 Bedrooms</span>
-                                <span><i class="fas fa-bath"></i> 3.5 Bathrooms</span>
-                                <span><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+
+                <!-- Group 3 -->
+                <div class="property-row row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property1.jpg" alt="Family Home" class="img-fluid">
+                                <span class="property-status">For Sale</span>
                             </div>
-                            <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
-                            <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            <div class="property-info">
+                                <h3>Spacious Family Home</h3>
+                                <div class="property-price">$750</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 5 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 3.5 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property1.jpg" alt="Family Home" class="img-fluid">
+                                <span class="property-status">For Sale</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Spacious Family Home</h3>
+                                <div class="property-price">$750</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 5 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 3.5 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property1.jpg" alt="Family Home" class="img-fluid">
+                                <span class="property-status">For Sale</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Spacious Family Home</h3>
+                                <div class="property-price">$750</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-bed"></i> 5 Bedrooms</span>
+                                    <span><i class="fas fa-bath"></i> 3.5 Bathrooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 3,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4 -->
+                <div class="property-row row">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="property-card">
+                            <div class="property-img">
+                                <img src="../images/property3.avif" alt="Commercial Office Space" class="img-fluid">
+                                <span class="property-status">For Lease</span>
+                            </div>
+                            <div class="property-info">
+                                <h3>Modern Office Space</h3>
+                                <div class="property-price">$95 per month</div>
+                                <div class="property-details">
+                                    <span><i class="fas fa-users"></i> Up to 20 staff</span>
+                                    <span><i class="fas fa-door-open"></i> 5 Rooms</span>
+                                    <span><i class="fas fa-ruler-combined"></i> 2,200 sq ft</span>
+                                </div>
+                                <p class="property-location"><i class="fas fa-map-marker-alt"></i> Financial District, New York</p>
+                                <a href="#" class="btn btn-outline-primary w-100">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4" data-aos="fade-up">
-                <a href="#" class="btn btn-primary">View All Properties</a>
+
+            <!-- Pagination -->
+            <div class="pagination-controls text-center mt-4">
+                <button class="btn btn-outline-primary me-2" id="prevBtn">Previous</button>
+                <button class="btn btn-outline-secondary page-btn" data-page="0">1</button>
+                <button class="btn btn-outline-secondary page-btn" data-page="1">2</button>
+                <button class="btn btn-outline-secondary page-btn" data-page="2">3</button>
+                <button class="btn btn-outline-secondary page-btn" data-page="3">4</button>
+                <button class="btn btn-outline-primary ms-2" id="nextBtn">Next</button>
             </div>
         </div>
     </section>
+
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -330,7 +569,7 @@
                     <p>Contact our real estate experts today for a free consultation.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a href="contact.html" class="btn btn-light btn-lg">Get Started Now</a>
+                    <a href="contact.html" class="btn btn-light btn-lg">Contact Us Now</a>
                 </div>
             </div>
         </div>
@@ -394,7 +633,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <!-- <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     Do you offer investment advice for real estate?
@@ -405,7 +644,7 @@
                                     Yes, we provide comprehensive investment advisory services for real estate. This includes market analysis, investment strategy development, ROI projections, portfolio diversification recommendations, and ongoing property management for your investment properties.
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -416,9 +655,9 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3 text-center">
                     <div class="footer-info">
-                        <h3>T&T Business Solutions</h3>
+                        <img src="../images/logo.png" alt="Logo" class="footer-logo mb-3">
                         <p>Your trusted partner for real estate, air ticket booking, visa consultation, and more.</p>
                         <div class="social-links">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -428,18 +667,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+
+                <div class="col-md-3 text-center">
                     <div class="footer-links">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="../index.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="../index.php#services">Services</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
+                            <li><a href="reviews.php">Reviews</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <div class="footer-links">
                         <h4>Our Services</h4>
                         <ul>
@@ -449,14 +690,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 text-center">
                     <div class="footer-contact">
                         <h4>Contact Us</h4>
                         <p>
-                            <i class="fas fa-map-marker-alt"></i> 123 Business Avenue, Suite 400<br>
-                            New York, NY 10001<br>
-                            <i class="fas fa-phone"></i> +1 (555) 123-4567<br>
-                            <i class="fas fa-envelope"></i> info@tandbsolutions.com
+                            <i class="fas fa-map-marker-alt"></i> 123 Nabisunsa, Jinja Road<br>
+                            Kampala, Uganda<br>
+                            <i class="fas fa-phone"></i>+256 744 - 766 - 410<br>
+                            <i class="fas fa-envelope"></i> info@ttbusinesssolution.com
                         </p>
                     </div>
                 </div>
@@ -464,20 +705,27 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="copyright">© 2025 T&T Business Solutions. All Rights Reserved.</p>
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 text-md-start text-center">
+                        <p class="copyright">© 2025 T&T Business Solution. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6 text-md-end">
+                    <div class="col-md-3 text-md-center text-center">
+                        <p class="copyright">
+                            Developed by <a href="https://namtechnologies.com" target="_blank" class="developer-link">namtechnologies.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 text-md-end text-center">
                         <div class="footer-links-bottom">
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms of Service</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Terms of Service</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </footer>
+
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
