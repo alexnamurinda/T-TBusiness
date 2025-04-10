@@ -1033,17 +1033,9 @@ section {
 
 /* ---------- Responsive Styles ---------- */
 @media (max-width: 991px) {
-    .navbar-collapse {
-        position: absolute;
-        top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
+    .navbar {
+        background-color: #fff;
         box-shadow: var(--box-shadow);
-        background-color: white;
-        padding: 1rem;
-        border-radius: 8px;
-        z-index: 999;
-        width: 90%;
     }
 
     .hero-section {
@@ -1103,15 +1095,4 @@ section {
     .footer-contact {
         margin-bottom: 2rem;
     }
-}
-
-/* Change toggler color to blue when active */
-.custom-toggler:focus,
-.custom-toggler:active,
-.custom-toggler[aria-expanded="true"] {
-    outline: none;
-}
-
-.custom-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='blue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

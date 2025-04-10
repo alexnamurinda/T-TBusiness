@@ -1,8 +1,8 @@
-(function() {
+(function () {
     'use strict';
 
     // Document ready function
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         // Initialize AOS (Animate on Scroll)
         AOS.init({
             duration: 800,
@@ -16,7 +16,7 @@
 
         // Navbar scroll
         const navbar = document.querySelector('.navbar');
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
@@ -26,7 +26,7 @@
 
         // Back to top button
         const backToTopButton = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 300) {
                 backToTopButton.classList.add('active');
             } else {
@@ -34,7 +34,7 @@
             }
         });
 
-        backToTopButton.addEventListener('click', function(e) {
+        backToTopButton.addEventListener('click', function (e) {
             e.preventDefault();
             window.scrollTo({
                 top: 0,
@@ -52,7 +52,7 @@
         const ratingStars = document.querySelectorAll('.rating-star');
         if (ratingStars.length > 0) {
             ratingStars.forEach(star => {
-                star.addEventListener('mouseover', function() {
+                star.addEventListener('mouseover', function () {
                     const rating = parseInt(this.dataset.rating);
 
                     // Reset all stars
@@ -66,7 +66,7 @@
                     });
                 });
 
-                star.addEventListener('click', function() {
+                star.addEventListener('click', function () {
                     const rating = parseInt(this.dataset.rating);
                     document.getElementById('reviewRating').value = rating;
                 });
@@ -76,7 +76,7 @@
         // Submit review form
         const submitReviewBtn = document.getElementById('submitReview');
         if (submitReviewBtn) {
-            submitReviewBtn.addEventListener('click', function() {
+            submitReviewBtn.addEventListener('click', function () {
                 const form = document.getElementById('reviewForm');
                 const formData = {
                     name: document.getElementById('reviewName').value,
@@ -144,7 +144,7 @@
         // Contact form submission
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
 
                 const formData = {
@@ -201,7 +201,7 @@
 
         // Initialize dropdowns
         var dropdowns = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
-        dropdowns.map(function(dropdown) {
+        dropdowns.map(function (dropdown) {
             return new bootstrap.Dropdown(dropdown);
         });
 
@@ -214,7 +214,7 @@
         // Property filter
         const propertyFilter = document.getElementById('propertyFilter');
         if (propertyFilter) {
-            propertyFilter.addEventListener('change', function() {
+            propertyFilter.addEventListener('change', function () {
                 const value = this.value;
                 const propertyCards = document.querySelectorAll('.property-card');
 
@@ -230,7 +230,7 @@
 
         // Initialize modals
         var modals = [].slice.call(document.querySelectorAll('[data-bs-toggle="modal"]'));
-        modals.map(function(modal) {
+        modals.map(function (modal) {
             return new bootstrap.Modal(modal);
         });
     });
@@ -251,11 +251,24 @@ if (myCarousel) {
     });
 }
 
-document.querySelectorAll('.nav-collapse').forEach(item => {
-    item.addEventListener('click', function () {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-        if (bsCollapse) {
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+    // Collapse on nav-link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                bsCollapse.hide();
+            }
+        });
+    });
+
+    // Collapse when clicking outside navbar
+    document.addEventListener('click', function (event) {
+        const isClickInside = navbarCollapse.contains(event.target) || event.target.classList.contains('navbar-toggler');
+        if (!isClickInside && navbarCollapse.classList.contains('show')) {
             bsCollapse.hide();
         }
     });
