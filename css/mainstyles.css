@@ -1033,16 +1033,12 @@ section {
 
 /* ---------- Responsive Styles ---------- */
 @media (max-width: 991px) {
-    .navbar {
-        background-color: #fff;
-        box-shadow: var(--box-shadow);
-    }
-
     .navbar-collapse {
         position: absolute;
         top: 60px;
         left: 50%;
         transform: translateX(-50%);
+        box-shadow: var(--box-shadow);
         background-color: white;
         padding: 1rem;
         border-radius: 8px;
